@@ -1,13 +1,11 @@
 .spinner {
   z-index: 2;
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 256px;
-  height: 256px;
-  margin: auto;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -30,7 +28,7 @@
 }
 
 .spinner path {
-  stroke-width: 3;
+  stroke-width: 20;
   fill: transparent;
   /* mix-blend-mode: multiply; */
 }

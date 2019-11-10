@@ -2,8 +2,8 @@ import React, { useState, useEffect, useMemo } from "react";
 import { morphing } from "primitivo-svg";
 
 function Spinner(props) {
-  const [width, setWidth] = useState(128);
-  const [height, setHeight] = useState(128);
+  const [width, setWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(window.innerHeight);
   const [pathsVisibility, setPathVisibility] = useState([]);
 
   const durPerPath = props.duration / (props.numOfKeyPaths * 2 - 1);

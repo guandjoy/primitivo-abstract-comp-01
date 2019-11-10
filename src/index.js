@@ -9,15 +9,16 @@ function App() {
   return (
     <>
       <Spinner
-        duration={13000}
-        shiftStep={200}
-        numOfKeyPaths={12}
-        numOfShapes={6}
+        duration={50000}
+        shiftStep={300}
+        numOfKeyPaths={6}
+        numOfShapes={12}
+        // colors={["#000"]}
         colors={["#3688FF", "#FF546C", "#22D163", "#3688FF"]}
-        contrast={1}
-        round={0.6}
-        numOfPathSegments={6}
-        type={"fill"}
+        contrast={5}
+        round={0}
+        numOfPathSegments={10}
+        type={"stroke"}
         lable={false}
       />
       <FooterCaption />
